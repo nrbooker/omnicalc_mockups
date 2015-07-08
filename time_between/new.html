@@ -3,6 +3,11 @@
 <head>
   <title>Omnicalc</title>
 
+  <script src="/assets/application-391bcb7d673d5090586060c4dfc0cb473af7b3d92a9ea06629ced34e9792b405.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="04Y0V8ZMI6JSw8QPwGsLm4IfMG4xfxaF4RG2EuP/UQZE18uFaqjMN7C99LbKXls4Qhm3FhHFcTHSinuOov/dTA==" />
+
+
   <!-- Connect to Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -24,6 +29,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <i class="fa fa-calculator"></i>
+          Omnicalc
+        </a>
+      </div>
+
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav visible-xs visible-sm">
+          <li>
+            <a href="/word_count/new">
+              <i class="fa fa-book"></i>
+              <span>Word Count</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/loan_payment/new">
+              <i class="fa fa-money"></i>
+              <span>Loan Payment</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/time_between/new">
+              <i class="fa fa-clock-o"></i>
+              <span>Time Between</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/descriptive_statistics/new">
+              <i class="fa fa-bar-chart"></i>
+              <span>Descriptive Statistics</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 hidden-xs hidden-sm">
+        <div class="list-group">
+          <a href="/word_count/new" class="list-group-item">
+            <i class="fa fa-book"></i>
+            Word Count
+          </a>
+          <a href="/loan_payment/new" class="list-group-item">
+            <i class="fa fa-money"></i>
+            Loan Payment
+          </a>
+          <a href="/time_between/new" class="list-group-item">
+            <i class="fa fa-clock-o"></i>
+            Time Between
+          </a>
+          <a href="/descriptive_statistics/new" class="list-group-item">
+            <i class="fa fa-bar-chart"></i>
+            Descriptive Statistics
+          </a>
+        </div>
+
+      </div>
+
+      <div class="col-md-9">
+        <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Time Between Calculation</h3>
+  </div>
+
+  <div class="panel-body">
+    <form action="/time_between/results" class="form-horizontal">
+
+      <div class="form-group">
+        <label for="starting_time" class="col-sm-2 control-label">Starting Time</label>
+        <div class="col-sm-10">
+          <div class="input-group date datetimepicker">
+            <input name="starting_time" type="text" class="form-control" id="starting_time">
+            <span class="input-group-addon">
+              <i class="fa fa-calendar"></i>
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+        <label for="ending_time" class="col-sm-2 control-label">Ending Time</label>
+        <div class="col-sm-10">
+          <div class="input-group date datetimepicker">
+            <input name="ending_time" type="text" class="form-control" id="ending_time">
+            <span class="input-group-addon">
+              <i class="fa fa-calendar"></i>
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </div>
+
+      </div>
+
+
+    </form>
+  </div>
+
+</div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
 
 </body>
 </html>
